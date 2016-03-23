@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labirinth</title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+<body>
+<div id="controls">
+    <table>
+        <tr>
+
+            <td id="var1" onclick="setFirstLabirinth()">First variant</td>
+            <td id="var2"onclick="setSecondLabirinth()">Second variant</td>
+            <td id="var3" onclick="setThirdLabirinth()">Third variant</td>
+            <td id="own" onclick="setOwnLabirinth()">Create own labirinth</td>
+        </tr>
+    </table>
+    <button id="solveLabirinth" onclick="solve()">Find exit!</button>
+</div>
+    <canvas id = "canvas" width = "500" height="400"></canvas>
+<div id="redactor">
+    <textarea id="inputLabirinth" placeholder="Example: &#010; 211&#010; 001&#010; 101&#010; 100&#010; 113"></textarea>
+    <div style="margin-left: 10%;" id="instructions">
+        <span>0-pass,</span>
+        <span>1-wall,</span>
+        <span>2-entrance,</span>
+        <span>3-exit</span>
+    </div>
+    <button onclick="readLabirinth()" id="createLabirinth">Create labirinth</button>
+</div>
+<script type="text/javascript" src="scripts/controller.js"></script>
+<script type="text/javascript" src="scripts/labirinth.js"></script>
+<script type="text/javascript" src="scripts/view.js"></script>
+<script type="text/javascript" src="scripts/exitSearch.js"></script>
+</body>
+</html>

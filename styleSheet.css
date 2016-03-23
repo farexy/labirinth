@@ -1,0 +1,63 @@
+#canvas{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border: 3px solid black;
+}
+
+#inputLabirinth{
+
+    width: 250px;
+    height: 250px;
+    border: 1px solid magenta;
+
+}
+
+#redactor{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+td{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-spacing: 0;
+    cursor: pointer;
+    font-family: 'Arial';
+
+    font-size: 26px;
+}
+
+
+
+#controls{
+    position: absolute;
+    left: 23%;
+}
+
+#solveLabirinth{
+    margin-left: 40%;
+    margin-top: 5%;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: limegreen;
+    font-size: large;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#createLabirinth{
+    margin-left: 30%;
+    margin-top: 3%;
+    width: 90px;
+    height: 60px;
+    border: none;
+    background-color: darkmagenta;
+    font-size: large;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
